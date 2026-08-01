@@ -30,7 +30,8 @@
       content="High-performance game server hosting built for gamers."
     />
 
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <!-- Use leading-slash paths so Vite can apply the configured base during build -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -44,6 +45,7 @@
   <body>
     <div id="root"></div>
 
-    <script type="module" src="./src/main.tsx"></script>
+    <!-- Vite dev entry: use leading slash so the built index.html references assets under the configured base -->
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
