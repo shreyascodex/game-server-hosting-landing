@@ -1,4 +1,4 @@
-````md
+
 <div align="center">
 
 # 🎮 Game Server Hosting Landing Page
