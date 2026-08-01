@@ -14,7 +14,9 @@ if (!Number.isInteger(port) || port <= 0) {
   throw new Error(`Invalid PORT value: "${rawPort}"`);
 }
 
-const basePath = process.env.BASE_PATH ?? '/';
+// Set a sensible default base path for GitHub Pages deployment so built assets
+// are referenced under the repository path.
+const basePath = process.env.BASE_PATH ?? '/game-server-hosting-landing/';
 
 export default defineConfig({
   base: basePath,
